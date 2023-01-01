@@ -31,6 +31,12 @@
         padding: 0 5%;
       }
 
+      h3.detailed-features__heading {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-bottom: 4.6rem;
+      }
+
       ul.detailed-features__list {
         display: flex;
         justify-content: center;
@@ -42,7 +48,7 @@
       }
 
       ul.detailed-features__list li.detailed-features__li {
-        min-width: 142px;
+        min-width: 180px;
         max-width: 22%;
         padding: 2rem;
         border-radius: 15px;
@@ -79,16 +85,16 @@
         display: inline-block;
         font-size: 1.8rem;
         font-weight: 700;
-        animation: feature-icon-animation 2.5s ease-in-out infinite alternate;
+        animation: feature-icon-animation 3s ease-in-out infinite alternate;
       }
 
       @keyframes feature-icon-animation {
-        0% {
-          color: hsla(0 0% 10% / 1);
+        35% {
+          color: hsla(0 0% 100% / 1);
         }
 
         100% {
-          color: hsla(0 0% 100% / 1);
+          color: hsla(0 0% 0% / 1);
         }
       }
 
@@ -206,6 +212,7 @@
 
       <div class="detailed-features">
         <div class="detailed-features__container">
+          <h3 class="detailed-features__heading">Detailed Features</h3>
           <ul class="detailed-features__list">
             <li class="detailed-features__li">
               <div class="watch-icon__container">
