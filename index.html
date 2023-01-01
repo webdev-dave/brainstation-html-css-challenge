@@ -18,7 +18,6 @@
       /* add your styles below: */
       /* universal */
 
-
       .uppercase {
         text-transform: uppercase;
       }
@@ -31,7 +30,6 @@
       .detailed-features__container {
         padding: 0 5%;
       }
-
 
       ul.detailed-features__list {
         display: flex;
@@ -48,7 +46,7 @@
         max-width: 22%;
         padding: 2rem;
         border-radius: 15px;
-        background-color: #E7E6E5;
+        background-color: #e7e6e5;
         /* background-color: #e2d6c3; */
       }
 
@@ -56,24 +54,23 @@
         position: relative;
         text-align: center;
         margin: 0 auto;
-        /* background-color: #000;
+        background-color: #000;
         width: 180px;
         height: 180px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        color: #fff; */
+        color: #fff;
       }
 
       .watch-icon__container .watch-icon {
         font-size: 7rem;
-  
       }
 
       .watch-icon__container .feature-icon__wrapper {
         position: absolute;
-        top: 35%;
+        top: 40%;
         left: 50%;
         transform: translateX(-50%);
       }
@@ -82,6 +79,17 @@
         display: inline-block;
         font-size: 1.8rem;
         font-weight: 700;
+        animation: feature-icon-animation 2.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes feature-icon-animation {
+        0% {
+          color: hsla(0 0% 10% / 1);
+        }
+
+        100% {
+          color: hsla(0 0% 100% / 1);
+        }
       }
 
       .detailed-features__text-container {
@@ -102,7 +110,6 @@
         font-size: 0.8rem;
         line-height: 3ch;
       }
-
 
       /* .pricing */
 
@@ -305,12 +312,6 @@
                 <p>
                   With a battery capacity up to 300mAh, you’ll have no problem
                   getting through the week with plenty of charge to spare.
-                </p>
-                <p>
-                  Furthermore, you may go beyond the basic requirements above to
-                  showcase your current HTML and CSS skills, including any
-                  skills not covered in the Admissions Challenge such as Flexbox
-                  or CSS animations.how
                 </p>
               </div>
             </li>
